@@ -657,7 +657,9 @@ display: none;    }
 
 
 @media screen and (max-width:750px) {
-    
+    .logo>img {
+        height: 30px;
+    }
 
     .intro-section{
         flex-direction: column-reverse;
