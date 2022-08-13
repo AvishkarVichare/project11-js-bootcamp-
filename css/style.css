@@ -525,3 +525,245 @@ footer{
 .social-media>div>img{
     height: 30px;
 }
+
+.burger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.burger>div{
+    height: 3px;
+    width: 25px;
+    background-color: #000000;
+}
+
+/* responsiveness */
+
+@media screen and (max-width:1200px) {
+
+    .intro-content>h1 {
+        font-size: 3.3rem;
+    }
+    .server-img {
+        height: 280px;
+    }
+    .intro-content>p {
+        font-size: 16px;
+        width: 500px;
+    }
+    .btn{
+        font-size: 18px;
+    }
+
+    .intro-content {
+        width: 440px;
+    }
+    .testing-img {
+        height: 250px;
+    }
+    .technical-img {
+        height: 417px;
+        top: -10%;
+        right: -18%;
+    }
+}
+
+
+@media screen and (max-width:950px) {
+    .burger{
+        display: flex;
+        margin-right: 35px;
+        cursor: pointer;
+    }
+    .logo {
+        margin-left: 40px;
+        height: 35px;
+    }
+    .nav-link{
+        font-size: 16px;
+    }
+    .list{
+display: none;    }
+    .server-img {
+        height: 200px;
+        right: -40px;
+    }
+
+    .price-card{
+        width: 230px;
+    }
+    .testing-img{
+        left: 30px;
+        height: 200px;
+    }
+
+    .technical-img{
+        right: -40px;
+        z-index: -1;
+    }
+    .intro-section{
+        padding: 0 80px;
+    }
+    .intro-content>h1 {
+        font-size: 2.5rem;
+    }
+    .intro-content>p {
+        width: 350px;
+    }
+    .price-cards{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .technical-img{
+        height: 270px;
+    }
+
+    #intro-section-2>.right-intro-section{
+        left: 70px;
+    }
+    .services {
+        margin: 0 40px;
+    }
+    .service-head>h1 {
+        font-size: 2.5rem;
+    }
+    .service-head>p {
+        font-size: 16px;
+    }
+    .pricing-section>h1 {
+        font-size: 2.5rem;
+    }
+    .review-header-part>h1 {
+        font-size: 2.5rem;
+    }
+    .review-section{
+        margin: 0 40px;
+    }
+    .register-left {
+        margin-left: 70px;
+    }
+    .register-right {
+        margin-right: 70px;
+    }
+    footer{
+        margin-top: 100px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    
+
+    .intro-section{
+        flex-direction: column-reverse;
+        padding: 0 35px;
+        margin-bottom: 50px;
+        gap: 10px;
+        align-items: center;
+        
+    }
+    #intro-section-2{
+        flex-direction: column;
+    }
+
+    .intro-content{
+        width:280px;
+    }
+
+    .intro-content>p{
+        width: 250px;
+        /* text-align: justify; */
+    }
+    .intro-content>h1{
+        font-size: 2.3rem;
+    }
+    .right-intro-section{
+        margin: 0;
+        position: static;
+        padding: 0;
+    }
+    .left-intro-section{
+        margin: 0;
+        padding: 0;
+        position: static;
+    }
+    .right-intro-section>img{
+        position: static;
+    }
+    .left-intro-section>img{
+        position: static;
+    }
+    .testing-img {
+        /* left: 30px; */
+        height: 160px;
+    }
+    .technical-img {
+        height: 230px;
+    }
+
+    .service-head{
+        margin-top: 150px;
+        flex-direction: column;
+    }
+
+    .service-head>h1{
+        font-size: 2.3rem;
+
+        width: 100%;
+        }
+        .service-head>p {
+            width: 100%;
+            font-size: 15px;
+        }
+
+        .review-section{
+            margin-top: 100px;
+        }
+        .review-card{
+            width: 250px;
+        }
+        .review-header-part>h1{
+            text-align: center;
+            font-size: 2.3rem;
+        }
+        .review-header-part>p {
+            width: 300px;
+        }
+
+        .register-section{
+            flex-direction: column;
+            align-items: center;
+        }
+        .register-left{
+            width: 100%;
+            margin: 0;
+        }
+
+        .register-left>h1{
+            margin: 0 auto;
+            font-size: 2.3rem;
+        text-align: center;
+        }
+        .register-left>p {
+            /* font-size: 16px; */
+            width: 300px;
+            text-align: center;
+            margin: 0 auto;
+        
+        }
+
+        .register-right{
+            margin:0;
+            margin-top: 30px;
+        }
+
+        .pricing-section>h1 {
+            font-size: 2.3rem;
+            text-align: center;
+        }
+}
